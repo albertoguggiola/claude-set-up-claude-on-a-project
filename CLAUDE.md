@@ -16,6 +16,9 @@ Run a single test file:
 node --test tests/users.test.js
 ```
 
+## Conventions
+Use CamelCase convention for variables
+
 ## Architecture
 
 This is a minimal Express REST API. The entry point is `server.js`, which wires up two route modules and conditionally starts the HTTP server (skipped when `require.main !== module` so tests can import the app without binding a port).
